@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+body{
+
+    background-color:rgba(211,211,211,.5);
+
+}
+
+.container{
+    max-width:1100px;
+    padding:0 2%;
+    display:flex;
+    margin: 40px auto;
+    height: 90vh;
+    
+    
+}
+
+.login{
+    background-color:  #4E5BEE;
+    height: 100%;
+    position: relative;  
+    display: flex;
+    width: 40%;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 1.4rem 0 0 1.4rem;    
+}
+
+.logo{
+
+
+width: 200px;
+height: 115.43px;
+background-image: url(./assets/logo-grab.svg);
+margin: 70px auto 30px;    
+background-repeat: no-repeat;
+background-size: 100% 100%; 
+
+
+}
+
+.login-wrapper{
+    
+
+
+}
+
+.login-form{
+    
+    margin-bottom: 100px;
+
+}
+
+
+.svg-wrapper{
+    height: 100%;
+    background-image: url(./assets/undraw_interview_rmcf.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;    
+    width: 60%;
+    background-color: white;
+
+
+}
+
+#email,#pass,#btn{
+    display: inline-block;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 15px;
+    border:2px solid #fff;
+    outline:0;
+    font-size: 1.1rem;
+    background-color:  #4E5BEE;
+
+}
+
+#btn{
+    margin-top: 30px;
+    background-color: #fff;
+    cursor: pointer;
+
+}
+
+#email{
+
+    margin-bottom: 0;
+
+}
+
+#email.active1{
+
+    border-color: #FF5757;
+
+}
+
+
+#pemail{
+    text-align:left;
+    padding: 0 35px;
+    font-size: .9rem;
+    margin: 0 auto;
+    color: white;
+    opacity: 0;
+    visibility: hidden;    
+}
+
+#pemail.active{
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.recuperar{
+    color:white
+
+
+}
+
+.recuperar a{
+    color: #fff;
+    text-decoration: none;
+
+}
+
+
+/*===========================Media screen==========================*/
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color:white;
+    }
+    
+    .container{
+        
+        padding:0;
+        display:block;
+        margin: auto;
+    height: 100vh;
+    
+    
+    }
+    .login{
+        
+        width: 100%;
+        border-radius: 1.4rem;    
+    }
+
+    .svg-wrapper{
+        height: 0;
+        display: none;
+    }
+}
