@@ -70,16 +70,40 @@ background-size: 100% 100%;
 
 }
 
-#email,#pass,#btn{
+.demail,.dpass,#btn{
     display: inline-block;
     width: 90%;
     margin: 0 auto;
-    padding: 10px;
+    padding: 5px;
     border-radius: 15px;
     border:2px solid #fff;
     outline:0;
     font-size: 1.1rem;
     background-color:  #4E5BEE;
+   
+   
+
+}
+
+.demail,.dpass{
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+#email,#pass{
+width: 90%;
+border:0;
+outline: 0;
+padding-left: 5px;
+line-height: 1.2rem;
+height: 1.2rem;
+background-color: #4E5BEE;
+color: white;
+
+
 
 }
 
@@ -87,7 +111,7 @@ background-size: 100% 100%;
     margin-top: 30px;
     background-color: #fff;
     cursor: pointer;
-
+    text-align: center;
 }
 
 #email{
@@ -96,17 +120,25 @@ background-size: 100% 100%;
 
 }
 
-#email.active1{
+.demail.active1{
 
     border-color: #FF5757;
 
 }
 
+.material-icons-outlined.active1{
+
+    color: #FF5757;
+
+}
+
+
 
 #pemail{
     text-align:left;
-    padding: 0 35px;
-    font-size: .9rem;
+    padding: 5px 35px;
+    font-size: 0rem;
+
     margin: 0 auto;
     color: white;
     opacity: 0;
@@ -115,8 +147,10 @@ background-size: 100% 100%;
 
 #pemail.active{
     opacity: 1;
+    padding: 0 35px;
     visibility: visible;
-
+    font-size: .9rem;
+    
 }
 
 .recuperar{
@@ -130,6 +164,32 @@ background-size: 100% 100%;
     text-decoration: none;
 
 }
+
+.material-icons-outlined {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    color: white;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
 
 
 /*===========================Media screen==========================*/
